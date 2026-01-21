@@ -4,6 +4,7 @@ import { CourseHero } from "@/components/course/CourseHero";
 import { CourseOverview } from "@/components/course/CourseOverview";
 import { PricingTable } from "@/components/course/PricingTable";
 import { MeetYourMentor } from "@/components/course/MeetYourMentor";
+import { ContactForm } from "@/components/home/ContactForm";
 
 const greTiers = [
   {
@@ -61,6 +62,7 @@ const GRE = () => {
         />
         <MeetYourMentor />
         <PricingTable tiers={greTiers} completePrice="₹85,000" />
+        <ContactForm preselectedCourse="gre" />
       </main>
       <Footer />
     </div>

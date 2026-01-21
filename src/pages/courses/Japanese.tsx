@@ -4,6 +4,7 @@ import { CourseHero } from "@/components/course/CourseHero";
 import { CourseOverview } from "@/components/course/CourseOverview";
 import { PricingTable } from "@/components/course/PricingTable";
 import { MeetYourMentor } from "@/components/course/MeetYourMentor";
+import { ContactForm } from "@/components/home/ContactForm";
 
 const japaneseTiers = [
   {
@@ -61,6 +62,7 @@ const Japanese = () => {
         />
         <MeetYourMentor />
         <PricingTable tiers={japaneseTiers} completePrice="₹78,000" />
+        <ContactForm preselectedCourse="japanese" />
       </main>
       <Footer />
     </div>

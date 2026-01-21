@@ -4,6 +4,7 @@ import { CourseHero } from "@/components/course/CourseHero";
 import { CourseOverview } from "@/components/course/CourseOverview";
 import { PricingTable } from "@/components/course/PricingTable";
 import { MeetYourMentor } from "@/components/course/MeetYourMentor";
+import { ContactForm } from "@/components/home/ContactForm";
 
 const toeflTiers = [
   {
@@ -61,6 +62,7 @@ const TOEFL = () => {
         />
         <MeetYourMentor />
         <PricingTable tiers={toeflTiers} completePrice="₹50,000" />
+        <ContactForm preselectedCourse="toefl" />
       </main>
       <Footer />
     </div>

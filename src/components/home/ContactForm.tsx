@@ -28,7 +28,11 @@ const courses = [
   { value: "toefl", label: "TOEFL Preparation" },
 ];
 
-export function ContactForm() {
+interface ContactFormProps {
+  preselectedCourse?: string;
+}
+
+export function ContactForm({ preselectedCourse }: ContactFormProps) {
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -36,7 +40,7 @@ export function ContactForm() {
     name: "",
     email: "",
     phone: "",
-    course: "",
+    course: preselectedCourse || "",
     message: "",
   });
   const [errors, setErrors] = useState<Partial<Record<keyof ContactFormData, string>>>({});
@@ -81,7 +85,7 @@ export function ContactForm() {
 
   if (isSubmitted) {
     return (
-      <section className="py-24 bg-muted/50">
+      <section id="contact" className="py-24 bg-muted/50">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
@@ -107,7 +111,7 @@ export function ContactForm() {
   }
 
   return (
-    <section className="py-24 bg-muted/50">
+    <section id="contact" className="py-24 bg-muted/50">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           {/* Left Content */}
@@ -219,7 +223,7 @@ export function ContactForm() {
                         <SelectValue placeholder="Select a course" />
                       </SelectTrigger>
                       <SelectContent>
-                        {courses.map((course) => (
+                        {(preselectedCourse ? courses.filter(c => c.value === preselectedCourse) : courses).map((course) => (
                           <SelectItem key={course.value} value={course.value}>
                             {course.label}
                           </SelectItem>

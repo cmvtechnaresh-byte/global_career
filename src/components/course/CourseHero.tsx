@@ -12,6 +12,13 @@ interface CourseHeroProps {
 export function CourseHero({ title, flag, description, gradient, image }: CourseHeroProps) {
   return (
     <section className={`relative py-24 lg:py-32 overflow-hidden ${gradient}`}>
+      {/* Background Image Overlay */}
+      {image && (
+        <div className="absolute inset-0 z-0">
+          <img src={image} alt="" className="w-full h-full object-cover opacity-10 mix-blend-overlay" />
+        </div>
+      )}
+
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 right-20 w-64 h-64 bg-primary-foreground rounded-full blur-3xl" />
@@ -48,8 +55,8 @@ export function CourseHero({ title, flag, description, gradient, image }: Course
 
             {/* CTAs */}
             <div className={`flex flex-wrap gap-4 ${!image ? 'justify-center' : ''}`}>
-              <Button variant="hero" size="lg">
-                Enroll Now
+              <Button asChild variant="hero" size="lg">
+                <a href="#contact">Enroll Now</a>
               </Button>
               <Button variant="heroOutline" size="lg">
                 Download Syllabus
