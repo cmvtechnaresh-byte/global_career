@@ -5,6 +5,7 @@ import { ArrowRight } from "lucide-react";
 const languageCourses = [
   {
     name: "German",
+    country: "Germany",
     flag: "🇩🇪",
     description: "Master the language of engineering, research, and European business opportunities.",
     path: "/courses/german",
@@ -12,6 +13,7 @@ const languageCourses = [
   },
   {
     name: "Spanish",
+    country: "Spain",
     flag: "🇪🇸",
     description: "Learn one of the world's most spoken languages for global career and travel.",
     path: "/courses/spanish",
@@ -19,6 +21,7 @@ const languageCourses = [
   },
   {
     name: "Japanese",
+    country: "Japan",
     flag: "🇯🇵",
     description: "Unlock opportunities in technology, manufacturing, and international trade.",
     path: "/courses/japanese",
@@ -26,6 +29,7 @@ const languageCourses = [
   },
   {
     name: "Mandarin",
+    country: "China",
     flag: "🇨🇳",
     description: "Master the world's most spoken language for global business success.",
     path: "/courses/mandarin",
@@ -104,8 +108,9 @@ export function CourseGrid() {
                 >
                   <div className="relative h-full bg-card rounded-2xl border border-border overflow-hidden shadow-soft hover:shadow-large transition-all duration-300 hover:-translate-y-1">
                     {/* Gradient Header */}
-                    <div className={`h-32 bg-gradient-to-br ${course.color} flex items-center justify-center`}>
-                      <span className="text-6xl">{course.flag}</span>
+                    <div className={`h-32 bg-gradient-to-br ${course.color} flex flex-col items-center justify-center`}>
+                      <span className="text-5xl mb-1 drop-shadow-md">{course.flag}</span>
+                      <span className="text-white font-bold tracking-wide drop-shadow-md">{course.country}</span>
                     </div>
 
                     {/* Content */}
