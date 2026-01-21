@@ -3,6 +3,7 @@ import { Footer } from "@/components/layout/Footer";
 import { CourseHero } from "@/components/course/CourseHero";
 import { CourseOverview } from "@/components/course/CourseOverview";
 import { PricingTable } from "@/components/course/PricingTable";
+import { MeetYourMentor } from "@/components/course/MeetYourMentor";
 
 const mandarinTiers = [
   {
@@ -57,6 +58,7 @@ const Mandarin = () => {
             "HSK certification preparation included",
           ]}
         />
+        <MeetYourMentor />
         <PricingTable tiers={mandarinTiers} completePrice="₹72,000" />
       </main>
       <Footer />

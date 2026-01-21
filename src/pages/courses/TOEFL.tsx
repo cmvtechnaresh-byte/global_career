@@ -3,6 +3,7 @@ import { Footer } from "@/components/layout/Footer";
 import { CourseHero } from "@/components/course/CourseHero";
 import { CourseOverview } from "@/components/course/CourseOverview";
 import { PricingTable } from "@/components/course/PricingTable";
+import { MeetYourMentor } from "@/components/course/MeetYourMentor";
 
 const toeflTiers = [
   {
@@ -57,6 +58,7 @@ const TOEFL = () => {
             "Target score achievement strategies",
           ]}
         />
+        <MeetYourMentor />
         <PricingTable tiers={toeflTiers} completePrice="₹50,000" />
       </main>
       <Footer />

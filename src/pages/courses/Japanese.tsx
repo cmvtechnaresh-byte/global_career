@@ -3,6 +3,7 @@ import { Footer } from "@/components/layout/Footer";
 import { CourseHero } from "@/components/course/CourseHero";
 import { CourseOverview } from "@/components/course/CourseOverview";
 import { PricingTable } from "@/components/course/PricingTable";
+import { MeetYourMentor } from "@/components/course/MeetYourMentor";
 
 const japaneseTiers = [
   {
@@ -57,6 +58,7 @@ const Japanese = () => {
             "JLPT certification preparation included",
           ]}
         />
+        <MeetYourMentor />
         <PricingTable tiers={japaneseTiers} completePrice="₹78,000" />
       </main>
       <Footer />

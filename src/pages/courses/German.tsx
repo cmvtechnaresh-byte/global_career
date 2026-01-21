@@ -3,6 +3,7 @@ import { Footer } from "@/components/layout/Footer";
 import { CourseHero } from "@/components/course/CourseHero";
 import { CourseOverview } from "@/components/course/CourseOverview";
 import { PricingTable } from "@/components/course/PricingTable";
+import { MeetYourMentor } from "@/components/course/MeetYourMentor";
 
 const germanTiers = [
   {
@@ -57,6 +58,7 @@ const German = () => {
             "Preparation for Goethe-Institut certifications",
           ]}
         />
+        <MeetYourMentor />
         <PricingTable tiers={germanTiers} completePrice="₹70,000" />
       </main>
       <Footer />

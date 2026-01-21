@@ -3,6 +3,7 @@ import { Footer } from "@/components/layout/Footer";
 import { CourseHero } from "@/components/course/CourseHero";
 import { CourseOverview } from "@/components/course/CourseOverview";
 import { PricingTable } from "@/components/course/PricingTable";
+import { MeetYourMentor } from "@/components/course/MeetYourMentor";
 
 const ieltsTiers = [
   {
@@ -57,6 +58,7 @@ const IELTS = () => {
             "Personalized speaking practice sessions",
           ]}
         />
+        <MeetYourMentor />
         <PricingTable tiers={ieltsTiers} completePrice="₹55,000" />
       </main>
       <Footer />
