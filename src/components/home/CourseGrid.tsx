@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { ArrowRight, Globe, GraduationCap, BookOpen } from "lucide-react";
+import { ArrowRight, UserCheck } from "lucide-react";
 
 const languageCourses = [
   {
@@ -34,19 +34,19 @@ const englishCourses = [
     name: "IELTS Preparation",
     description: "Comprehensive preparation for academic and general IELTS exams.",
     path: "/courses/ielts",
-    icon: <Globe className="w-8 h-8 text-blue-600" />,
+    icon: <UserCheck className="w-8 h-8 text-blue-600" />,
   },
   {
     name: "GRE Preparation",
     description: "Master quantitative, verbal, and analytical writing for graduate admissions.",
     path: "/courses/gre",
-    icon: <GraduationCap className="w-8 h-8 text-red-600" />,
+    icon: <UserCheck className="w-8 h-8 text-red-600" />,
   },
   {
     name: "TOEFL Preparation",
     description: "Excel in the Test of English as a Foreign Language for study abroad.",
     path: "/courses/toefl",
-    icon: <BookOpen className="w-8 h-8 text-green-600" />,
+    icon: <UserCheck className="w-8 h-8 text-green-600" />,
   },
 ];
 
