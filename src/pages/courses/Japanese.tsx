@@ -48,6 +48,7 @@ const Japanese = () => {
           title="Japanese Language"
           description="Japanese language skills are highly valued in technology, manufacturing, and international trade sectors."
           gradient="bg-gradient-to-br from-red-500 to-pink-600"
+          image="https://explore-live.s3.eu-west-1.amazonaws.com/medialibraries/explore/explore-media/destinations/asia/japan/japan-banner.jpg?ext=.jpg&width=1920&format=webp&quality=80&v=201704211523%201920w"
         />
         <CourseOverview
           overview="Japanese language skills are highly valued in technology, manufacturing, and international trade sectors. Japan's rich culture and economic power make Japanese an invaluable asset for your career."

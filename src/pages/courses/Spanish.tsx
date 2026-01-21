@@ -48,6 +48,7 @@ const Spanish = () => {
           title="Spanish Language"
           description="Spanish is one of the most spoken global languages, ideal for international jobs, travel, and cultural exchange."
           gradient="bg-gradient-to-br from-red-600 to-amber-500"
+          image="https://imgproxy.natucate.com/-vndXU7oBuIXNKjk6dDx5nFGLDormaGGXl8_zSmPZE0/rs:fill/g:ce/w:3840/h:2160/aHR0cHM6Ly93d3cubmF0dWNhdGUuY29tL21lZGlhL3BhZ2VzL3JlaXNlemllbGUvNDI4YTYzZWUtMmYzOS00YmFjLTgwY2UtNmY2N2Y4Yzc1NzJlLzQ2NjdmNWFmMWUtMTY3OTQ4Njc1MC9zcGFuaWVuLWxhZW5kZXJpbmZvcm1hdGlvbmVuLXN0YWR0LW96ZWFuLXdhc3Nlci1uYXR1Y2F0ZS5qcGc"
         />
         <CourseOverview
           overview="Spanish is one of the most spoken global languages, ideal for international jobs, travel, and cultural exchange. With over 500 million speakers worldwide, Spanish opens doors to opportunities across the Americas, Europe, and beyond."

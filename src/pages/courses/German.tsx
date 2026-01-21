@@ -48,6 +48,7 @@ const German = () => {
           title="German Language"
           description="German is a high-demand language across Europe, essential for careers in engineering, healthcare, research, and international business."
           gradient="hero-gradient"
+          image="https://media.istockphoto.com/id/619638736/photo/historic-town-of-rothenburg-ob-der-tauber-franconia-bavaria-germany.jpg?s=612x612&w=0&k=20&c=IPnUDs04lzGWP7T4kqd3OlswxsIAEnTpsN_eSaPVE8I="
         />
         <CourseOverview
           overview="German is a high-demand language across Europe, essential for careers in engineering, healthcare, research, and international business. Our comprehensive program takes you from complete beginner to professional proficiency."

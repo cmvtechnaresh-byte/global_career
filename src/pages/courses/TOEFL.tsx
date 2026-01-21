@@ -48,6 +48,7 @@ const TOEFL = () => {
           title="TOEFL Preparation"
           description="Excel in the Test of English as a Foreign Language. Our program prepares you for success in academic English environments."
           gradient="bg-gradient-to-br from-orange-500 to-amber-600"
+          image="https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
         />
         <CourseOverview
           overview="TOEFL iBT is accepted by 11,000+ universities and institutions in over 150 countries. Our preparation program focuses on the four key skills tested: Reading, Listening, Speaking, and Writing, with strategies tailored for academic success."

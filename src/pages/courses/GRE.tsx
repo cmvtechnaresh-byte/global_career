@@ -48,6 +48,7 @@ const GRE = () => {
           title="GRE Preparation"
           description="Master the Graduate Record Examination with our comprehensive preparation program. Achieve competitive scores for top graduate school admissions."
           gradient="bg-gradient-to-br from-emerald-600 to-teal-700"
+          image="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
         />
         <CourseOverview
           overview="The GRE is required by thousands of graduate and business schools worldwide. Our comprehensive program covers Verbal Reasoning, Quantitative Reasoning, and Analytical Writing with proven strategies to maximize your score."

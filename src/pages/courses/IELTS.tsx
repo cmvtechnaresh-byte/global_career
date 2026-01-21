@@ -48,6 +48,7 @@ const IELTS = () => {
           title="IELTS Preparation"
           description="Comprehensive preparation for the International English Language Testing System. Master all four sections and achieve your target band score."
           gradient="bg-gradient-to-br from-blue-600 to-blue-800"
+          image="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
         />
         <CourseOverview
           overview="IELTS is recognized by over 10,000 organizations worldwide. Our preparation course covers all four modules - Listening, Reading, Writing, and Speaking - with proven strategies to help you achieve your target band score."

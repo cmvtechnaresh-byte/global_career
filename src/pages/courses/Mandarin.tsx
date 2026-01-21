@@ -48,6 +48,7 @@ const Mandarin = () => {
           title="Mandarin Language"
           description="Mandarin is the world's most spoken language and essential for global business and trade opportunities."
           gradient="bg-gradient-to-br from-red-600 to-red-800"
+          image="https://t4.ftcdn.net/jpg/01/88/97/67/360_F_188976775_naafg0BY2uOus4snBVbqiHVs7nuRQ1P3.jpg"
         />
         <CourseOverview
           overview="Mandarin is the world's most spoken language and essential for global business and trade opportunities. As China continues to grow as an economic superpower, Mandarin skills give you a competitive edge in the global marketplace."
