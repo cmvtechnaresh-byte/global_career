@@ -6,11 +6,19 @@ interface CourseHeroProps {
   flag?: string;
   description: string;
   gradient: string;
+  image?: string;
 }
 
-export function CourseHero({ title, flag, description, gradient }: CourseHeroProps) {
+export function CourseHero({ title, flag, description, gradient, image }: CourseHeroProps) {
   return (
-    <section className={`relative py-32 overflow-hidden ${gradient}`}>
+    <section className={`relative py-32 overflow-hidden ${!image ? gradient : ''}`}>
+      {image && (
+        <div className="absolute inset-0 z-0">
+          <img src={image} alt={title} className="w-full h-full object-cover" />
+          <div className={`absolute inset-0 ${gradient} opacity-90`} />
+        </div>
+      )}
+
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 right-20 w-64 h-64 bg-primary-foreground rounded-full blur-3xl" />
