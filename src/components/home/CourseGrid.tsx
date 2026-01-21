@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { ArrowRight, UserCheck } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 const languageCourses = [
   {
@@ -34,19 +34,19 @@ const englishCourses = [
     name: "IELTS Preparation",
     description: "Comprehensive preparation for academic and general IELTS exams.",
     path: "/courses/ielts",
-    icon: <UserCheck className="w-8 h-8 text-blue-600" />,
+    image: "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
   },
   {
     name: "GRE Preparation",
     description: "Master quantitative, verbal, and analytical writing for graduate admissions.",
     path: "/courses/gre",
-    icon: <UserCheck className="w-8 h-8 text-red-600" />,
+    image: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
   },
   {
     name: "TOEFL Preparation",
     description: "Excel in the Test of English as a Foreign Language for study abroad.",
     path: "/courses/toefl",
-    icon: <UserCheck className="w-8 h-8 text-green-600" />,
+    image: "https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
   },
 ];
 
@@ -152,19 +152,27 @@ export function CourseGrid() {
                   to={course.path}
                   className="group block h-full"
                 >
-                  <div className="relative h-full bg-card rounded-2xl border border-border p-6 shadow-soft hover:shadow-large transition-all duration-300 hover:-translate-y-1">
-                    <div className="w-14 h-14 rounded-xl bg-muted flex items-center justify-center mb-4">
-                      {course.icon}
+                  <div className="relative h-full bg-card rounded-2xl border border-border overflow-hidden shadow-soft hover:shadow-large transition-all duration-300 hover:-translate-y-1">
+                    {/* Image Header */}
+                    <div className="h-32 relative flex flex-col items-center justify-center overflow-hidden">
+                      <div className="absolute inset-0">
+                        <img src={course.image} alt={course.name} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                        <div className="absolute inset-0 bg-black/40 group-hover:bg-black/30 transition-colors duration-300" />
+                      </div>
                     </div>
-                    <h4 className="font-display text-xl font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
-                      {course.name}
-                    </h4>
-                    <p className="text-muted-foreground text-sm mb-4">
-                      {course.description}
-                    </p>
-                    <div className="flex items-center gap-2 text-primary font-semibold text-sm">
-                      Meet Your Mentor
-                      <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+
+                    {/* Content */}
+                    <div className="p-6">
+                      <h4 className="font-display text-xl font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
+                        {course.name}
+                      </h4>
+                      <p className="text-muted-foreground text-sm mb-4 line-clamp-2">
+                        {course.description}
+                      </p>
+                      <div className="flex items-center gap-2 text-primary font-semibold text-sm">
+                        Meet Your Mentor
+                        <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                      </div>
                     </div>
                   </div>
                 </Link>
