@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Globe, GraduationCap, BookOpen } from "lucide-react";
 
 const languageCourses = [
   {
@@ -34,19 +34,19 @@ const englishCourses = [
     name: "IELTS Preparation",
     description: "Comprehensive preparation for academic and general IELTS exams.",
     path: "/courses/ielts",
-    icon: "📘",
+    icon: <Globe className="w-8 h-8 text-blue-600" />,
   },
   {
     name: "GRE Preparation",
     description: "Master quantitative, verbal, and analytical writing for graduate admissions.",
     path: "/courses/gre",
-    icon: "📕",
+    icon: <GraduationCap className="w-8 h-8 text-red-600" />,
   },
   {
     name: "TOEFL Preparation",
     description: "Excel in the Test of English as a Foreign Language for study abroad.",
     path: "/courses/toefl",
-    icon: "📗",
+    icon: <BookOpen className="w-8 h-8 text-green-600" />,
   },
 ];
 
@@ -153,7 +153,7 @@ export function CourseGrid() {
                   className="group block h-full"
                 >
                   <div className="relative h-full bg-card rounded-2xl border border-border p-6 shadow-soft hover:shadow-large transition-all duration-300 hover:-translate-y-1">
-                    <div className="w-14 h-14 rounded-xl bg-muted flex items-center justify-center text-3xl mb-4">
+                    <div className="w-14 h-14 rounded-xl bg-muted flex items-center justify-center mb-4">
                       {course.icon}
                     </div>
                     <h4 className="font-display text-xl font-bold text-foreground mb-2 group-hover:text-primary transition-colors">

@@ -45,7 +45,6 @@ const Japanese = () => {
       <main className="pt-16">
         <CourseHero
           title="Japanese Language"
-          flag="🇯🇵"
           description="Japanese language skills are highly valued in technology, manufacturing, and international trade sectors."
           gradient="bg-gradient-to-br from-red-500 to-pink-600"
         />

@@ -45,7 +45,6 @@ const German = () => {
       <main className="pt-16">
         <CourseHero
           title="German Language"
-          flag="🇩🇪"
           description="German is a high-demand language across Europe, essential for careers in engineering, healthcare, research, and international business."
           gradient="hero-gradient"
         />

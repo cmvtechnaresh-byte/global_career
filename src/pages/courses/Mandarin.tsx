@@ -45,7 +45,6 @@ const Mandarin = () => {
       <main className="pt-16">
         <CourseHero
           title="Mandarin Language"
-          flag="🇨🇳"
           description="Mandarin is the world's most spoken language and essential for global business and trade opportunities."
           gradient="bg-gradient-to-br from-red-600 to-red-800"
         />

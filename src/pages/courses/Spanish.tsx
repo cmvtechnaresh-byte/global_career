@@ -45,7 +45,6 @@ const Spanish = () => {
       <main className="pt-16">
         <CourseHero
           title="Spanish Language"
-          flag="🇪🇸"
           description="Spanish is one of the most spoken global languages, ideal for international jobs, travel, and cultural exchange."
           gradient="bg-gradient-to-br from-red-600 to-amber-500"
         />
