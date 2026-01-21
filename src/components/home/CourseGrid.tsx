@@ -5,32 +5,24 @@ import { ArrowRight } from "lucide-react";
 const languageCourses = [
   {
     name: "German",
-    country: "Germany",
-    flag: "🇩🇪",
     description: "Master the language of engineering, research, and European business opportunities.",
     path: "/courses/german",
     image: "https://media.istockphoto.com/id/619638736/photo/historic-town-of-rothenburg-ob-der-tauber-franconia-bavaria-germany.jpg?s=612x612&w=0&k=20&c=IPnUDs04lzGWP7T4kqd3OlswxsIAEnTpsN_eSaPVE8I=",
   },
   {
     name: "Spanish",
-    country: "Spain",
-    flag: "🇪🇸",
     description: "Learn one of the world's most spoken languages for global career and travel.",
     path: "/courses/spanish",
     image: "https://imgproxy.natucate.com/-vndXU7oBuIXNKjk6dDx5nFGLDormaGGXl8_zSmPZE0/rs:fill/g:ce/w:3840/h:2160/aHR0cHM6Ly93d3cubmF0dWNhdGUuY29tL21lZGlhL3BhZ2VzL3JlaXNlemllbGUvNDI4YTYzZWUtMmYzOS00YmFjLTgwY2UtNmY2N2Y4Yzc1NzJlLzQ2NjdmNWFmMWUtMTY3OTQ4Njc1MC9zcGFuaWVuLWxhZW5kZXJpbmZvcm1hdGlvbmVuLXN0YWR0LW96ZWFuLXdhc3Nlci1uYXR1Y2F0ZS5qcGc",
   },
   {
     name: "Japanese",
-    country: "Japan",
-    flag: "🇯🇵",
     description: "Unlock opportunities in technology, manufacturing, and international trade.",
     path: "/courses/japanese",
     image: "https://explore-live.s3.eu-west-1.amazonaws.com/medialibraries/explore/explore-media/destinations/asia/japan/japan-banner.jpg?ext=.jpg&width=1920&format=webp&quality=80&v=201704211523%201920w",
   },
   {
     name: "Mandarin",
-    country: "China",
-    flag: "🇨🇳",
     description: "Master the world's most spoken language for global business success.",
     path: "/courses/mandarin",
     image: "https://t4.ftcdn.net/jpg/01/88/97/67/360_F_188976775_naafg0BY2uOus4snBVbqiHVs7nuRQ1P3.jpg",
@@ -110,12 +102,8 @@ export function CourseGrid() {
                     {/* Image Header */}
                     <div className="h-32 relative flex flex-col items-center justify-center overflow-hidden">
                       <div className="absolute inset-0">
-                        <img src={course.image} alt={course.country} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                        <img src={course.image} alt={course.name} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
                         <div className="absolute inset-0 bg-black/40 group-hover:bg-black/30 transition-colors duration-300" />
-                      </div>
-                      <div className="relative z-10 flex flex-col items-center">
-                        <span className="text-5xl mb-1 drop-shadow-md transform group-hover:scale-110 transition-transform duration-300">{course.flag}</span>
-                        <span className="text-white font-bold tracking-wide drop-shadow-md">{course.country}</span>
                       </div>
                     </div>
 
